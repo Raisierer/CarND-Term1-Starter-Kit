@@ -1,10 +1,9 @@
-name: carnd-term1
+name: carnd-term1-cpu
 channels:
     - https://conda.anaconda.org/menpo
     - conda-forge
 dependencies:
     - python
-    - pip
     - numpy
     - matplotlib
     - jupyter
@@ -19,7 +18,7 @@ dependencies:
     - pandas
     - ffmpeg
     - imageio
-    - pyqt
+    - pyqt=4.11.4
     - pip:
           - moviepy
           - opencv-python

@@ -10,18 +10,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libpng12-dev \
         libzmq3-dev \
         pkg-config \
-	python \
+        python \
         python3-dev \
         rsync \
         software-properties-common \
         unzip \
         libgtk2.0-0 \
         git \
-	tcl-dev \
-	tk-dev \	
+        tcl-dev \
+        tk-dev \	
         && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+        apt-get clean && \
+        rm -rf /var/lib/apt/lists/*
 
 ADD https://repo.continuum.io/miniconda/Miniconda3-4.4.10-Linux-x86_64.sh tmp/Miniconda3-4.4.10-Linux-x86_64.sh
 RUN bash tmp/Miniconda3-4.4.10-Linux-x86_64.sh -b
